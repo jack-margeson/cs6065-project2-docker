@@ -1,0 +1,6 @@
+Total word count in IF.txt: 301
+Total word count in AlwaysRememberUsThisWay.txt: 242
+Total word count across both files: 543
+Top 3 words in IF.txt: [('you', 20), ('If', 13), ('can', 12)]
+Top 3 words in AlwaysRememberUsThisWay.txt: [('I', 15), ('the', 12), ('not', 7)]
+IP address of the machine running the container: 192.168.65.9

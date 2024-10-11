@@ -1,0 +1,3 @@
+NAME                                        READY   STATUS    RESTARTS   AGE
+cs6065-python-deployment-59b445b9b9-86n24   1/1     Running   0          109s
+cs6065-python-deployment-59b445b9b9-x5ppl   1/1     Running   0          109s

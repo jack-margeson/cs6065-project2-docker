@@ -3,3 +3,8 @@ services:
     build:
       context: .
     image: cs6065-python
+    network_mode: host
+    volumes:
+      - type: bind
+        source: ./data
+        target: /home/data

@@ -2,10 +2,17 @@ FROM alpine:latest
 
 RUN apk update && apk add --no-cache \
     bash \
-    curl
+    curl \
+    python3
 
-WORKDIR /app
+RUN mkdir -p /home/data/output
 
-COPY . /app
+WORKDIR /home/data
 
-CMD ["bash"]
+COPY ./data/* /home/data/
+
+#CMD ["/bin/bash"]
+CMD ["python3", "/home/data/scripts.py"]
+
+# Below is a command for testing the Kubernetes cluster for the extra credit.
+#CMD ["sh", "-c", "while true; do python3 -c 'print(\"a\")'; sleep 1; done"]
